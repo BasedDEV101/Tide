@@ -1,0 +1,20 @@
+{
+  "name": "tides",
+  "version": "0.1.0",
+  "description": "An onchain multiplayer fishing game built on Solana",
+  "private": true,
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test",
+    "clean": "anchor clean"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@types/chai": "^4.3.14",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.4.1",
+    "mocha": "^10.4.0",
+    "typescript": "^5.3.3"
+  }
+}
+
