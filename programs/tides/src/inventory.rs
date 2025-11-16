@@ -1,6 +1,9 @@
 use anchor_lang::prelude::*;
 use crate::{TidesError, SlotType, ItemType};
 
+pub mod inventory {
+    use super::*;
+
 // ============ Inventory Account Structures ============
 
 #[account]
@@ -165,7 +168,7 @@ pub mod inventory {
     }
 
     pub fn remove_item(
-        inventory: &mut Account<PlayerInventory>,
+        inventory: &mut Account<'_, PlayerInventory>,
         instance_id: u64,
     ) -> Result<()> {
         let mut found = false;
