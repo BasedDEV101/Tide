@@ -1,9 +1,6 @@
 use anchor_lang::prelude::*;
 use crate::{TidesError, SlotType, ItemType};
 
-pub mod inventory {
-    use super::*;
-
 // ============ Inventory Account Structures ============
 
 #[account]
@@ -209,4 +206,3 @@ pub mod inventory {
 }
 
 pub use inventory::coords_to_index;
-
